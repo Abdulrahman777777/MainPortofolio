@@ -11,7 +11,7 @@ const Ideas = ({ settextCursor, cursorControls }) => {
         settextCursor={settextCursor}
         cursorControls={cursorControls}
       />
-      <ItBegs />
+      <ItBegs cursorControls={cursorControls} settextCursor={settextCursor} />
       <Answers cursorControls={cursorControls} settextCursor={settextCursor} />
     </div>
   );

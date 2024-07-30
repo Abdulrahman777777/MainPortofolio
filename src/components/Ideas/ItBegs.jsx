@@ -7,7 +7,7 @@ import {
 } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const ItBegs = () => {
+const ItBegs = ({ cursorControls, settextCursor }) => {
   const textVariant = {
     initial: { y: -1100 },
     visible: (index) => ({
@@ -15,6 +15,8 @@ const ItBegs = () => {
       transition: { duration: 0.1, delay: 0.2 + 0.2 * index },
     }),
   };
+  const width = window.screen.width;
+  const height = window.screen.height;
   const itScope = useRef();
   const begsScope = useRef();
   const theScope = useRef();
@@ -40,8 +42,12 @@ const ItBegs = () => {
   const InsaneView = useInView(InsaneScope, { once: true });
   const AnimationsView = useInView(AnimataionsScope, { once: true });
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0.625, 0.875], [4000, -4000]);
-  const y = useTransform(scrollYProgress, [0.625, 0.875], [-1100, 200]);
+  const x = useTransform(
+    scrollYProgress,
+    [0.625, 0.875],
+    [width * 3.425, -width * 2.825]
+  );
+  const y = useTransform(scrollYProgress, [0.625, 0.875], [-height * 1.5, 200]);
   useEffect(() => {
     if (ItView) {
       ItControls.start("visible");
@@ -100,11 +106,16 @@ const ItBegs = () => {
   }, [AnimationsView]);
 
   return (
-    <div className="begs w-screen h-fourScreen overflow-hidden flex justify-center items-center  cursor-none">
+    <motion.div
+      onClick={() => {
+        cursorControls.start("initial");
+        settextCursor("");
+      }}
+      className="begs w-screen h-fourScreen overflow-hidden flex justify-center items-center  cursor-none"
+    >
       <motion.div
-        initial={{ x: -6000, y: -1700 }}
         style={{ x: x, y: y }}
-        className="text  relative top-1/3  flex justify-center items-center w-screen  cursor-none"
+        className="text  relative top-1/3  flex justify-center items-center w-screen  cursor-none sm:top-1/4"
       >
         <motion.h5
           className="text-Full flex w-full h-full  story-text  font-anton  cursor-none text-blueShade"
@@ -507,7 +518,7 @@ const ItBegs = () => {
           &nbsp;&nbsp;
         </h5>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

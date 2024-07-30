@@ -15,14 +15,14 @@ const Notime = ({ settextCursor }) => {
   return (
     <section className="notime h-screen w-screen flex flex-wrap items-center overflow-hidden cursor-none">
       <div className="notime-text w-full h-40">
-        <h1 className="flex text-9xl tracking-widest justify-center items-center">
+        <h1 className="flex flex-wrap text-9xl notime:text-7xl tracking-widest justify-center items-center">
           <motion.p
             ref={text}
             variants={{ initial: { scale: 1000 }, visible: { scale: 1 } }}
             initial={"initial"}
             animate={textControls}
             transition={{ duration: 1 }}
-            className="text-blue font-anton"
+            className="text-blue font-anton min-w-72"
           >
             I can do it&nbsp;
           </motion.p>

@@ -15,7 +15,7 @@ const Answers = ({ settextCursor, cursorControls }) => {
             words={[
               "Well!",
               "It's",
-              " just",
+              "just",
               "to",
               "Impress",
               "Friends,",

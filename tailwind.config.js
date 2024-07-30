@@ -16,6 +16,7 @@ module.exports = {
       screens: {
         sm: { max: "956px" },
         other: { max: "1266px" },
+        notime: { max: "1010px" },
       },
       fontSize: {
         Full: "30vw",
