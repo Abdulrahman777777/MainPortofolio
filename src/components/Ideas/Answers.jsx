@@ -52,6 +52,30 @@ const Answers = ({ settextCursor, cursorControls }) => {
           />
         );
       }}
+      onClick={() => {
+        cursorControls.start("visible");
+        settextCursor(
+          <Typewriter
+            words={[
+              "Well!",
+              "It's just",
+              "to",
+              "Impress",
+              "Friends,",
+              "and don't",
+              "forget",
+              "Family!",
+            ]}
+            cursor
+            cursorBlinking={true}
+            cursorStyle="!"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+            loop={false}
+          />
+        );
+      }}
       onHoverEnd={() => {
         cursorControls.start("initial");
         settextCursor("");
