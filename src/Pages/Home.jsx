@@ -33,7 +33,7 @@ const Home = ({ color }) => {
             transition: { duration: 0.5, delay: 0.5, ease: "easeOut" },
           },
           visible: {
-            scale: 8,
+            scale: 6.5,
             transition: { duration: 0.5, delay: 0.5, ease: "easeIn" },
           },
         }}
