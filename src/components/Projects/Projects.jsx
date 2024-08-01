@@ -50,7 +50,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 14,
+                  delay: 12,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -69,7 +69,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 13.4,
+                  delay: 10.4,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -88,7 +88,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 12.8,
+                  delay: 10.8,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -107,7 +107,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 12.8,
+                  delay: 10.8,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -126,7 +126,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 12.2,
+                  delay: 10.2,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -145,7 +145,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 11.6,
+                  delay: 9.6,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -164,7 +164,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 11,
+                  delay: 9,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -183,7 +183,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 10.4,
+                  delay: 8.4,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -203,7 +203,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 6.8,
+                  delay: 4.8,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -218,7 +218,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 6.8,
+                  delay: 4.8,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -241,7 +241,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 6.8,
+                  delay: 4.8,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -260,7 +260,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 6.8,
+                  delay: 4.8,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -279,7 +279,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 9.8,
+                  delay: 7.8,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -298,7 +298,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 6.2,
+                  delay: 4.2,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -317,7 +317,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 5.6,
+                  delay: 3.6,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -336,7 +336,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 5,
+                  delay: 3,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -355,7 +355,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 4.4,
+                  delay: 2.4,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -374,7 +374,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 3.8,
+                  delay: 1.8,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -393,7 +393,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 3.2,
+                  delay: 1.2,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -412,7 +412,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 2.6,
+                  delay: 0.6,
                   ease: "circInOut",
                   bounce: 1,
                 }}
@@ -431,7 +431,7 @@ const Projections = () => {
                 }}
                 transition={{
                   duration: 5,
-                  delay: 2,
+                  delay: 0,
                   ease: "circInOut",
                   bounce: 1,
                 }}
