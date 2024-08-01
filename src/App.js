@@ -2,6 +2,7 @@ import { AnimatePresence, useScroll, useTransform } from "framer-motion";
 import Home from "./Pages/Home";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -20,7 +21,8 @@ function App() {
       "#0D2043",
     ]
   );
-  window.scrollTo(0, 0);
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <motion.div className="App relative">
       <motion.div
