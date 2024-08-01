@@ -4,6 +4,7 @@ import Projections from "../components/Projects/Projects";
 import ProjectDisplay from "../components/Projects/ProjectDisplay";
 
 const Projects = () => {
+  window.scrollTo(0, 0);
   const { scrollYProgress } = useScroll();
   const x = useTransform(scrollYProgress, [0.5, 1], [0, -window.innerWidth]);
   const y = useTransform(scrollYProgress, [0.5, 1], [0, window.innerHeight]);
