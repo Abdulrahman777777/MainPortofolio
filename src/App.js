@@ -20,9 +20,9 @@ function App() {
       "#0D2043",
     ]
   );
+  window.scrollTo(0, 0);
   return (
     <motion.div className="App relative">
-      window.scrollTo(0, 0);
       <motion.div
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
