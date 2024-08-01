@@ -10,7 +10,7 @@ const Welcome = ({ settextCursor }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 3 }}
-          className=" text-center text-8xl font-inkfree text-blue tracking-wide sm:text-6xl sm:pt-24"
+          className=" text-center text-8xl font-anton tracking-widest text-blue  sm:text-6xl sm:pt-24"
         >
           Something. <br />
           <Typewriter

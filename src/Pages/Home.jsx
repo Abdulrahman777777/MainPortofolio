@@ -10,6 +10,7 @@ const Home = ({ color }) => {
   const cursorControls = useAnimation();
   const cursor = useRef();
   const [textCursor, settextCursor] = useState("");
+
   return (
     <div
       className="home  overflow-hidden"
@@ -33,7 +34,7 @@ const Home = ({ color }) => {
             transition: { duration: 0.5, delay: 0.5, ease: "easeOut" },
           },
           visible: {
-            scale: 6.5,
+            scale: 30,
             transition: { duration: 0.5, delay: 0.5, ease: "easeIn" },
           },
         }}
@@ -43,7 +44,21 @@ const Home = ({ color }) => {
         style={{ x: currentcursorX - 50, y: currentcursory - 50 }}
         className="flex justify-center items-center circle rounded-full  h-100 min-w-100 max-w-100 fixed z-30 border-blue border-x-4 border-y-4 pointer-events-none"
       >
-        <motion.h3 className="cursor-none text-white font-anton  tracking-widest">
+        <motion.h3
+          className="cursor-none text-white font-anton  tracking-widest notime:text-1xl"
+          variants={{
+            initial: {
+              scale: 1,
+              transition: { duration: 0.5, delay: 0.5, ease: "easeOut" },
+            },
+            visible: {
+              scale: 0.2,
+              transition: { duration: 0.5, delay: 0.5, ease: "easeIn" },
+            },
+          }}
+          initial={"initial"}
+          animate={cursorControls}
+        >
           {textCursor}
         </motion.h3>
       </motion.div>

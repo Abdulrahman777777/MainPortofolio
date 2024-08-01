@@ -1,6 +1,7 @@
-import { useScroll, useTransform } from "framer-motion";
+import { AnimatePresence, useScroll, useTransform } from "framer-motion";
 import Home from "./Pages/Home";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -20,13 +21,19 @@ function App() {
     ]
   );
   return (
-    <div className="App relative">
+    <motion.div className="App relative">
+      <motion.div
+        initial={{ scaleY: 1 }}
+        animate={{ scaleY: 0 }}
+        transition={{ duration: 2, ease: "circOut" }}
+        className="popin w-screen h-screen bg-blue fixed z-40 -top-0 origin-bottom pointer-events-none"
+      ></motion.div>
       <motion.div
         className="background w-screen h-screen fixed -z-10"
         style={{ backgroundColor: color }}
       ></motion.div>
       <Home className="absolute top-0 left-0 z-10 " color={color} />
-    </div>
+    </motion.div>
   );
 }
 
