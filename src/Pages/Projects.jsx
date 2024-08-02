@@ -3,9 +3,10 @@ import Dark from "../components/Projects/Dark";
 import Projections from "../components/Projects/Projects";
 import ProjectDisplay from "../components/Projects/ProjectDisplay";
 import FooterPro from "../components/FooterProj";
+import { useEffect } from "react";
 
 const Projection = () => {
-  if (window.innerWidth < 812) {
+  if (window.innerWidth > 812) {
     return <Projections />;
   } else {
     return null;
@@ -13,7 +14,7 @@ const Projection = () => {
 };
 
 const Projects = () => {
-  console.log(window.innerWidth);
+  useEffect(() => window.scroll(0, 0));
   return (
     <div className="cursor-default bg-Dark">
       <motion.div
