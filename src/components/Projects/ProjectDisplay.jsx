@@ -5,7 +5,7 @@ const ProjectDisplay = () => {
   return (
     <section className=" bg-Dark flex justify-start flex-wrap mb-10">
       <div className="text w-screen pb-8">
-        <h2 className="text-9xl  text-white font-Display w-screen">
+        <h2 className="text-9xl  text-white font-Display w-screen proje:text-5xl">
           My Projects:
         </h2>
       </div>

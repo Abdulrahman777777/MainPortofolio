@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -7,6 +8,7 @@ import FooterCont from "../components/footerCont";
 
 function Contact() {
   const [state, handleSubmit] = useForm("xvoegjjb");
+  useEffect(() => window.scroll(0, 0));
   if (state.succeeded) {
     return (
       <section className="w-screen h-screen bg-blueShades flex justify-center items-center flex-wrap">

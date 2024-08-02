@@ -23,6 +23,7 @@ module.exports = {
       screens: {
         sm: { max: "956px" },
         pro: { max: "812px" },
+        proje: { max: "799px" },
         other: { max: "1266px" },
         notime: { max: "1010px" },
       },

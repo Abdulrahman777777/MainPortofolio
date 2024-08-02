@@ -24,18 +24,7 @@ const Answers = ({ settextCursor, cursorControls }) => {
           cursorControls.start("visible");
           settextCursor(
             <Typewriter
-              words={[
-                "Well!",
-                "It's",
-                "just",
-                "to",
-                "Impress",
-                "Friends,",
-                "and",
-                " don't",
-                "forget",
-                "Family!",
-              ]}
+              words={["Who?", "doesn't", "want", "fancy", "animations"]}
               cursor
               cursorBlinking={true}
               cursorStyle="!"

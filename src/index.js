@@ -12,11 +12,13 @@ import Projects from "./Pages/Projects";
 import { AnimatePresence } from "framer-motion";
 import SomePretty from "./components/Ideas/SomePretty";
 import Contact from "./Pages/Cntact";
+import Four04 from "./components/Four04";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Four04 />,
   },
   {
     path: "/Projects",
