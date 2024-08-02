@@ -2,14 +2,20 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Dark from "../components/Projects/Dark";
 import Projections from "../components/Projects/Projects";
 import ProjectDisplay from "../components/Projects/ProjectDisplay";
+import FooterPro from "../components/FooterProj";
+
+const Projection = () => {
+  if (window.innerWidth < 812) {
+    return <Projections />;
+  } else {
+    return null;
+  }
+};
 
 const Projects = () => {
-  window.scrollTo(0, 0);
-  const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0.5, 1], [0, -window.innerWidth]);
-  const y = useTransform(scrollYProgress, [0.5, 1], [0, window.innerHeight]);
+  console.log(window.innerWidth);
   return (
-    <div className="cursor-default h-threeScreen overflow-hidden">
+    <div className="cursor-default bg-Dark">
       <motion.div
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
@@ -17,10 +23,9 @@ const Projects = () => {
         className="push-out w-screen h-screen bg-blueShades origin-bottom fixed z-50"
       ></motion.div>
       <Dark />
-      <motion.div className="horizontal-scroll flex" style={{ x: x, y: y }}>
-        <Projections />
-        <ProjectDisplay />
-      </motion.div>
+      <Projection />
+      <ProjectDisplay />
+      <FooterPro />
     </div>
   );
 };

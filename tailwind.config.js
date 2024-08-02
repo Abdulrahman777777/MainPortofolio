@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     letterSpacing: {
+      Projects3: "1rem",
       Projects: "4rem",
       Projects2: "4.3rem",
     },
@@ -21,6 +22,7 @@ module.exports = {
       },
       screens: {
         sm: { max: "956px" },
+        pro: { max: "812px" },
         other: { max: "1266px" },
         notime: { max: "1010px" },
       },
@@ -33,6 +35,9 @@ module.exports = {
       },
     },
     height: {
+      0: "0%",
+      20: "20%",
+      252: "28rem",
       fourScreen: "400vh",
       blow: "20rem",
       threeScreen: "300vh",
@@ -59,15 +64,28 @@ module.exports = {
     minWidth: {
       100: "100px",
       72: "24rem",
+      326: "326px",
+      30: "30px",
     },
     maxWidth: {
+      30: "30px",
       100: "100px",
+      326: "326px",
     },
     padding: {
       1: "10px",
       2: "20px",
       5: "50px",
       8: "80px",
+    },
+    borderRadius: {
+      20: "20px",
+      214: "214px",
+      270: "270px",
+      155: "155px",
+      100: "100px",
+      full: "9999px",
+      xl2: "1rem",
     },
   },
   plugins: [],

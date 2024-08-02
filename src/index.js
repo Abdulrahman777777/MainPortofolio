@@ -11,6 +11,7 @@ import {
 import Projects from "./Pages/Projects";
 import { AnimatePresence } from "framer-motion";
 import SomePretty from "./components/Ideas/SomePretty";
+import Contact from "./Pages/Cntact";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/Projects",
     element: <Projects />,
+  },
+  {
+    path: "/Contact",
+    element: <Contact />,
   },
 ]);
 
