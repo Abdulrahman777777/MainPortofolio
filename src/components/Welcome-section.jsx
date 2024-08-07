@@ -1,5 +1,4 @@
-import { delay, easeIn, motion, stagger } from "framer-motion";
-import { easeInOut } from "framer-motion/dom";
+import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
 const Welcome = ({ settextCursor }) => {

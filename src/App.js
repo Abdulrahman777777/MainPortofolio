@@ -1,7 +1,6 @@
 import { AnimatePresence, useScroll, useTransform } from "framer-motion";
 import Home from "./Pages/Home";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 function App() {

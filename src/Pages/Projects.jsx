@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Dark from "../components/Projects/Dark";
 import Projections from "../components/Projects/Projects";
 import ProjectDisplay from "../components/Projects/ProjectDisplay";

@@ -1,11 +1,4 @@
-import {
-  animate,
-  AnimationControls,
-  delay,
-  motion,
-  useAnimation,
-  useInView,
-} from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const SomePretty = ({ settextCursor }) => {

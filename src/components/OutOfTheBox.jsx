@@ -1,10 +1,4 @@
-import {
-  animate,
-  easeInOut,
-  motion,
-  useAnimation,
-  useInView,
-} from "framer-motion";
+import { easeInOut, motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const OutOfTheBox = ({ settextCursor }) => {

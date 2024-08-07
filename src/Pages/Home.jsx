@@ -1,8 +1,8 @@
 import Welcome from "../components/Welcome-section";
 import OutOfTheBox from "../components/OutOfTheBox";
 import Ideas from "./Ideas";
-import { useEffect, useRef, useState } from "react";
-import { animate, motion, useAnimation } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 const Home = ({ color }) => {
   const [currentcursorX, setCurrentX] = useState(0);

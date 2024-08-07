@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import FooterCont from "../components/footerCont";
 
 function Contact() {
