@@ -34,6 +34,13 @@ const Data = [
     image: "Untitled",
     link: "https://dragable-phi.vercel.app/",
   },
+  {
+    name: "ThreeD Wormhole",
+    description: "A wormhole that goes on forever...",
+    technologies: ["javascript", "html", "css"],
+    image: "Untitled2",
+    link: "https://wormhole-iota.vercel.app/",
+  },
 ];
 
 export default Data;
