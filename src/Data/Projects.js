@@ -27,6 +27,13 @@ const Data = [
     image: "canvas3",
     link: "https://portoflioprojectboody.vercel.app/index.html",
   },
+  {
+    name: "ThreeD shpere",
+    description: "Drag a shpere through the third dimention",
+    technologies: ["javascript", "html", "css"],
+    image: "Untitled",
+    link: "https://dragable-phi.vercel.app/",
+  },
 ];
 
 export default Data;
