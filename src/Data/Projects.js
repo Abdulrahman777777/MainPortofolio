@@ -41,6 +41,13 @@ const Data = [
     image: "Untitled2",
     link: "https://wormhole-iota.vercel.app/",
   },
+  {
+    name: "Quotable",
+    description: "Get a quote that motivates you..",
+    technologies: ["react"],
+    image: "Untitled3",
+    link: "https://quotable-ebon.vercel.app/",
+  },
 ];
 
 export default Data;
